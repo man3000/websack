@@ -1,12 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Input y Botón Submit</title>
+	<title>Knapsack reduced problem</title>
 	<script src="app.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-	<h1>Ingrese su nombre:</h1>
-	<input type="text" id="nombre">
-	<button onclick="saludar()">Saludar</button>
+	
+	<form>
+			<legend>Input data (decimal numbers separated by commas)</legend>
+			<label for="numbers">Numbers:</label>
+			<input type="text" id="numbers" name="numbers">
+			<label for="total">Total:</label>
+			<input type="text" id="total" name="total">
+		<button type="submit" onclick="calculate()" >Calculate</button>
+	</form>
+	
+	
 </body>
 </html>
